@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>Ebay Slide Editor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+
+</head>
+
+<body>
+    <!-- mainWarp -->
+    <section id="warp">
+
+    </section>
+    <!-- //mainWarp -->
+
+    <script>
+
+        // 1. private 프로퍼티, 메쏘드의 선언
+        // var ClassA;
+
+        // ClassA = function(){
+        //     var a = 30;
+        //     var test = function(){
+        //         return a;
+        //     }
+        //     console.log( "ClassA" , a );
+        // }
+        // ClassA();
+
+        // 2. public 프로퍼티, 메쏘드의 선언
+
+        var ClassB = function(name){
+            this.name = name;
+        };
+        var adam = new ClassB("Adam");
+
+        ClassB.prototype.say = function () {
+            return this.name;
+        }
+
+        console.log( "ClassB" , adam.say() );
+    </script>
+    
+</body>
+</html>
